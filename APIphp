@@ -1,0 +1,8 @@
+<?php
+
+$contents_api = fopen("https://bad-api-assignment.reaktor.com/","r");
+$products = stream_get_contents($contents_api);
+fclose($contents_api);
+
+print $contents_api;
+?>
